@@ -16,7 +16,12 @@ function australia(userAnswer) {
 function canada(userAnswer) {
   // what is the capital of canada?
   // 100 pts
+  const isCorrect = userAnswer === 'Ottawa';
   
+  if (isCorrect) {
+    points += 100; 
+  }
+  return isCorrect;
 }
 
 function uppercase(userAnswer, word) {
