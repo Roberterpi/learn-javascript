@@ -64,8 +64,15 @@ function getAverageAge(list) {
 
 function getAllEngineers(list) {
   // using the same list as above, return a list of all people who have the word "Engineer" in their jobTitle
+  const names = [];
 
-  return ["Altaïr", "Ezio", "Connor", "Bayek", "Alexios"];
+  for (let i = o; i < list.lenght; i++) {
+    if (list[i].jobTitle.includes(`Engineer`)) {
+      names.push(list[i].name);
+    }
+  }
+  
+  return names;
 }
 
 function sort(list) {
