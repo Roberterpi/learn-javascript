@@ -30,7 +30,14 @@ function makeDogObject() {
   //   has a color property of "white"
   //   has an age property of 6
 
-  return {};
+  return {
+    speak () {
+      return `woof`;
+    },
+    name: `Fido`,
+    color: `white`,
+    age: 6
+  };
 }
 
 function getListOfNames(list) {
