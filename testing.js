@@ -44,8 +44,11 @@ function getListOfNames(list) {
   // list is an array of objects that looks like this
   // { name: "Some Person", jobTitle: "Boss Person", age: 30 }
   // return a list of all the workers' names
+  const names = list.map(function(person){
+    return person.name;
+  })
 
-  return ["Bobby Baratheon", "Jonny Snow", "Dani Targaryen"];
+  return names;
 }
 
 function getAverageAge(list) {
