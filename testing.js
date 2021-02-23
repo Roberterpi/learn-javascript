@@ -20,7 +20,7 @@ function findLargestNumber(list) {
     }
   }
 
-  return 0;
+  return largest;
 }
 
 function makeDogObject() {
