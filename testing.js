@@ -79,19 +79,16 @@ function sort(list) {
   // sort a list of numbers into ascending order
   // if you need more help, Google how to do bubble sort
   // you can sort, if you want to write it by hand, use bubble sort or insertion sort
-  let swapped = true;
-  while (swapped) {
-    swapped = false;
-    for (let i = 0; i < list.length; i++) {
-      if (list[i] > list[i + 1]) {
-        const temp = list[i];
-        list[i] = list[i + 1];
-        list[i + 1] = temp;
-        swapped = true;
-      }
+  const sortedList = list.sort(function(num1, num2) {
+    if (num1 > num2) {
+      return 1;
+    } else if (num1 < num2) {
+      return -1;
     }
-  }
-  return list;
+    return 0;
+  })
+  
+  return sortedList;
 }
 
 // unit tests
