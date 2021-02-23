@@ -53,8 +53,13 @@ function getListOfNames(list) {
 
 function getAverageAge(list) {
   // using the same list as above, get the average age of all the workers'
+  let sum = 0;
 
-  return 15;
+  for (let i = 0; i < list.length; i++) {
+    sum += list[i].age;
+  }
+
+  return sum / list.length;
 }
 
 function getAllEngineers(list) {
