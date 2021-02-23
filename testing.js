@@ -12,7 +12,14 @@ function addTwoToEveryNumberInTheList (list) {
 
 function findLargestNumber(list) {
   // return the largest number in array
+  let largest = list[0];
 
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] > largest) {
+      largest = list[i];
+    }
+  }
+  
   return 0;
 }
 
